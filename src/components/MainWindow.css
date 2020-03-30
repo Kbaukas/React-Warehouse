@@ -1,0 +1,20 @@
+.MainWindow {
+  margin-top: 50px;
+}
+.MainWindow h1 {
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+  margin-bottom: 50px;
+}
+.MainWindow table {
+  /* border-collapse: collapse;
+  border: 1px solid grey; */
+  width: 90vw;
+}
+.MainWindow table td {
+  border: 1px solid grey;
+}
+/* .MainWindow table tbody {
+  display: flex;
+} */
