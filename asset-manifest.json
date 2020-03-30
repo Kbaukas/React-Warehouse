@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-Warehouse/static/css/main.66f83dc7.chunk.css",
+    "main.js": "/React-Warehouse/static/js/main.096d4c63.chunk.js",
+    "main.js.map": "/React-Warehouse/static/js/main.096d4c63.chunk.js.map",
+    "runtime-main.js": "/React-Warehouse/static/js/runtime-main.37a0daf1.js",
+    "runtime-main.js.map": "/React-Warehouse/static/js/runtime-main.37a0daf1.js.map",
+    "static/js/2.0888ff62.chunk.js": "/React-Warehouse/static/js/2.0888ff62.chunk.js",
+    "static/js/2.0888ff62.chunk.js.map": "/React-Warehouse/static/js/2.0888ff62.chunk.js.map",
+    "index.html": "/React-Warehouse/index.html",
+    "precache-manifest.ffb3166cfff44b2d84bda434e8702a6f.js": "/React-Warehouse/precache-manifest.ffb3166cfff44b2d84bda434e8702a6f.js",
+    "service-worker.js": "/React-Warehouse/service-worker.js",
+    "static/css/main.66f83dc7.chunk.css.map": "/React-Warehouse/static/css/main.66f83dc7.chunk.css.map",
+    "static/js/2.0888ff62.chunk.js.LICENSE.txt": "/React-Warehouse/static/js/2.0888ff62.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/React-Warehouse/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37a0daf1.js",
+    "static/js/2.0888ff62.chunk.js",
+    "static/css/main.66f83dc7.chunk.css",
+    "static/js/main.096d4c63.chunk.js"
+  ]
+}
