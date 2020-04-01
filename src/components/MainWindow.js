@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import ProducInTable from "./ProducInTable";
 import "./MainWindow.css";
-
+import uuid from "uuid/v4";
+import ProductData from "./data/jsonData.json";
 class MainWindow extends Component {
+  // *******default props for table Head********
   static defaultProps = {
     tableHead: [
       "Desert (100g serving)",
@@ -11,54 +13,56 @@ class MainWindow extends Component {
       "Carbs(g)",
       "Protein(g)",
       "Active"
-    ],
-    products: [
-      {
-        productName: "Frozen yoghurt",
-        calories: 159,
-        fat: 6,
-        carbs: 24,
-        protein: 4
-      },
-      {
-        productName: "Ice cream sandwich",
-        calories: 237,
-        fat: 9,
-        carbs: 37,
-        protein: 4.3
-      },
-      { productName: "Eclair", calories: 262, fat: 16, carbs: 24, protein: 6 },
-      {
-        productName: "Cupcake",
-        calories: 305,
-        fat: 3.7,
-        carbs: 67,
-        protein: 4.3
-      },
-      {
-        productName: "Marshmallow",
-        calories: 318,
-        fat: 0,
-        carbs: 81,
-        protein: 2
-      }
     ]
   };
+  constructor(props) {
+    super(props);
+    //*****Initial state from Json******** */
+    this.state = {
+      products: this.readJason()
+    };
+    this.removeRecord = this.removeRecord.bind(this);
+    this.readJason = this.readJason.bind(this);
+  }
+  //****function to add unique id to each product  and use this function to initiate state*/
+  readJason() {
+    let newProduct = [];
+    ProductData.products.map(product => {
+      newProduct.push({ ...product, active: false, id: uuid() });
+    });
+    return newProduct;
+  }
+  //********remove product**** by id */
+  removeRecord(id) {
+    console.log("remove");
+    this.setState(cuState => ({
+      products: cuState.products.filter(product => product.id !== id)
+    }));
+  }
+
   render() {
     return (
       <div className="MainWindow">
         <h1>Warehouse Product's Table</h1>
+        {/********  genarating table*********** */}
         <table>
+          {/* Table head */}
           <thead>
             <tr>
               {this.props.tableHead.map(th => (
-                <th>{th}</th>
+                <th key={uuid()}>{th}</th>
               ))}
             </tr>
           </thead>
+          {/* generating table body  */}
           <tbody>
-            {this.props.products.map(p => (
-              <ProducInTable product={p} />
+            {this.state.products.map(product => (
+              <ProducInTable
+                key={product.id}
+                id={product.id}
+                product={product}
+                remove={this.removeRecord}
+              />
             ))}
           </tbody>
         </table>
