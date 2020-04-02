@@ -1,0 +1,39 @@
+.EditForm form {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: rgb(223, 210, 186); */
+}
+.EditForm .input_1 {
+  min-width: 21.65%;
+  border: none;
+  text-align: center;
+}
+.EditForm .input_2,
+.input_3,
+.input_4,
+.input_5 {
+  margin-left: 5px;
+  /* min-width: 7.6%; */
+  border: none;
+  border-left: 2px solid rgba(128, 128, 128, 0.144);
+  text-align: center;
+}
+.EditForm .input_3 {
+  /* width: 7.1%; */
+}
+.EditForm .input_4 {
+  /* width: 7.2%; */
+}
+.EditForm .input_5 {
+  /* width: 8.79%; */
+}
+.EditForm button {
+  /* margin-right: auto; */
+  margin-left: 5%;
+  padding: 10px 0;
+  width: 6.6%;
+  border: none;
+  background-color: rgba(32, 40, 165, 0.644);
+  color: white;
+  border-radius: 5px;
+}
