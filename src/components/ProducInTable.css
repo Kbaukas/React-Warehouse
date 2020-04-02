@@ -33,8 +33,23 @@
 .delete {
   background-color: rgba(112, 11, 31, 0.87);
 }
-/* .ProducInTable .editable {
-  padding: 0;
-  margin: 0;
-} */
-/*  */
+.ProducInTable .editable {
+  background: linear-gradient(
+    to right,
+    rgba(218, 153, 69, 0.144) 0%,
+    rgba(218, 153, 69, 0.144) 0%,
+    rgba(218, 153, 69, 0.144) 30%,
+    rgba(145, 104, 142, 0.774) 40%
+  );
+  background-size: 300% 300%;
+  animation: Slide 1s ease 1;
+}
+
+@keyframes Slide {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
