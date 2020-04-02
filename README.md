@@ -1,1 +1,1 @@
-Few update. Read from Json, delete from table and some styling.
+Delete,Edit are working:) to be Continued
