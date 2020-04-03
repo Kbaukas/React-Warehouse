@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import uuid from "uuid/v4";
 import "./ProducInTable.css";
 import EditForm from "./EditForm";
 
@@ -41,7 +40,7 @@ class ProducInTable extends Component {
     console.log(productName);
     return this.state.editing ? (
       <tr className="ProducInTable">
-        <td className="editable" colspan="9">
+        <td className="editable" colSpan="9">
           <EditForm
             close={this.closeForm}
             updateTable={this.props.update}

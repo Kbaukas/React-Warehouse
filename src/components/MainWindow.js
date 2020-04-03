@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ProducInTable from "./ProducInTable";
 import "./MainWindow.css";
-import uuid from "uuid/v4";
+import { v4 as uuidv4 } from "uuid";
+
 import ProductData from "./data/jsonData.json";
 import EditForm from "./EditForm";
 class MainWindow extends Component {
@@ -16,9 +17,11 @@ class MainWindow extends Component {
       "Active"
     ]
   };
+
   constructor(props) {
     super(props);
     //*****Initial state from Json******** */
+
     this.state = {
       products: this.readJason()
     };
@@ -27,10 +30,11 @@ class MainWindow extends Component {
     this.updateTable = this.updateTable.bind(this);
   }
   //****function to add unique id to each product  and use this function to initiate state*/
+
   readJason() {
     let newProduct = [];
     ProductData.products.map(product => {
-      newProduct.push({ ...product, active: false, id: uuid() });
+      newProduct.push({ ...product, active: false, id: uuidv4() });
     });
     return newProduct;
   }
@@ -40,6 +44,11 @@ class MainWindow extends Component {
     this.setState(cuState => ({
       products: cuState.products.filter(product => product.id !== id)
     }));
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log("In did Update " + prevState.products[0].productName);
+    console.log("In did Update " + this.state.products[0].productName);
   }
   //***** */ updating table  ******
   updateTable(id, editData) {
@@ -74,7 +83,7 @@ class MainWindow extends Component {
           <thead>
             <tr>
               {this.props.tableHead.map(th => (
-                <th key={uuid()}>{th}</th>
+                <th key={uuidv4()}>{th}</th>
               ))}
             </tr>
           </thead>
@@ -92,10 +101,10 @@ class MainWindow extends Component {
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="9">
-                <div class="links">
+              <td colSpan="9">
+                <div className="links">
                   <a href="#">&laquo;</a>{" "}
-                  <a class="active" href="#">
+                  <a className="active" href="#">
                     1
                   </a>{" "}
                   <a href="#">2</a> <a href="#">3</a> <a href="#">4</a>{" "}
