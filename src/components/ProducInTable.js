@@ -27,6 +27,9 @@ class ProducInTable extends Component {
       editing: !this.state.editing
     });
   }
+  componentWillUnmount() {
+    console.log("Unmount");
+  }
   render() {
     // getting props from parent element(MainWindow) and unwrapping
     const {

@@ -36,6 +36,7 @@ class MainWindow extends Component {
     ProductData.products.map(product => {
       newProduct.push({ ...product, active: false, id: uuidv4() });
     });
+    localStorage.setItem("products", JSON.stringify(newProduct));
     return newProduct;
   }
   //********remove product**** by id */
@@ -44,16 +45,14 @@ class MainWindow extends Component {
     this.setState(cuState => ({
       products: cuState.products.filter(product => product.id !== id)
     }));
+    let products = JSON.parse(localStorage.getItem("products"));
+    let newProducts = products.filter(product => product.id !== id);
+
+    localStorage.setItem("products", JSON.stringify(newProducts));
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log("In did Update " + prevState.products[0].productName);
-    console.log("In did Update " + this.state.products[0].productName);
-  }
   //***** */ updating table  ******
   updateTable(id, editData) {
-    console.log(id);
-
     const { productName, calories, fat, carbs, protein } = editData;
     const updatedProducts = this.state.products.map(product => {
       if (product.id === id) {
@@ -71,8 +70,13 @@ class MainWindow extends Component {
     this.setState({
       products: updatedProducts
     });
-    // console.log(this.state.products[0].productName);
+    // *************************
+    localStorage.setItem("products", JSON.stringify(updatedProducts));
+    let products = JSON.parse(localStorage.getItem("products"));
+    console.log(products);
+    // ***************************
   }
+
   render() {
     return (
       <div className="MainWindow">

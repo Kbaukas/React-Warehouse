@@ -35,6 +35,9 @@ class EditForm extends Component {
     this.props.updateTable(this.props.product.id, this.state);
     this.props.close();
   }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("Form Update");
+  }
   render() {
     return (
       <div className="EditForm">
