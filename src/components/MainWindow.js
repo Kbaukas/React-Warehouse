@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProducInTable from "./ProducInTable";
-import "./MainWindow.css";
+import "./css/MainWindow.css";
 import { v4 as uuidv4 } from "uuid";
 
 import ProductData from "./data/jsonData.json";

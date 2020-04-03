@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ProducInTable.css";
+import "./css/ProducInTable.css";
 import EditForm from "./EditForm";
 
 class ProducInTable extends Component {
