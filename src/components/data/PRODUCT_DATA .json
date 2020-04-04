@@ -7,7 +7,7 @@
       },
       "productName": "Figs",
       "color": "Aquamarine",
-      "type": "fruit",
+      "type": "Cheese - Gouda Smoked",
       "weight": 723.02,
       "active": true,
       "quantity": 78,
@@ -20,8 +20,8 @@
       },
       "productName": "Beer - Alexander Kieths, Pale Ale",
       "color": "Khaki",
-      "type": "Alcoholic drink ",
-      "weight": 500,
+      "type": "Glycerine",
+      "weight": 487.71,
       "active": false,
       "quantity": 68,
       "price": 12.3
@@ -33,8 +33,8 @@
       },
       "productName": "Wine - Lamancha Do Crianza",
       "color": "Red",
-      "type": "Alcoholic drink ",
-      "weight": 1000,
+      "type": "Island Oasis - Banana Daiquiri",
+      "weight": 69.99,
       "active": true,
       "quantity": 15,
       "price": 16.26
@@ -46,13 +46,25 @@
       },
       "productName": "Onions - Dried, Chopped",
       "color": "Yellow",
-      "type": "Vegetable",
+      "type": "Potatoes - Idaho 80 Count",
       "weight": 67.48,
       "active": false,
       "quantity": 17,
       "price": 7.02
     },
-
+    {
+      "Index": 5,
+      "ean": {
+        "$oid": "5e886901fc13ae6690000036"
+      },
+      "productName": "Seedlings - Buckwheat, Organic",
+      "color": "Crimson",
+      "type": "Beef - Bresaola",
+      "weight": 129.22,
+      "active": false,
+      "quantity": 82,
+      "price": 3.91
+    },
     {
       "Index": 6,
       "ean": {
@@ -60,13 +72,25 @@
       },
       "productName": "Wine - Winzer Krems Gruner",
       "color": "Crimson",
-      "type": "Alcoholic drink ",
-      "weight": 700,
+      "type": "Fruit Salad Deluxe",
+      "weight": 894.02,
       "active": false,
       "quantity": 79,
       "price": 15.49
     },
-
+    {
+      "Index": 7,
+      "ean": {
+        "$oid": "5e886901fc13ae6690000038"
+      },
+      "productName": "Calypso - Pineapple Passion",
+      "color": "Maroon",
+      "type": "Beef - Top Sirloin",
+      "weight": 137.83,
+      "active": false,
+      "quantity": 21,
+      "price": 7.77
+    },
     {
       "Index": 8,
       "ean": {
@@ -74,7 +98,7 @@
       },
       "productName": "Nut - Pistachio, Shelled",
       "color": "Mauv",
-      "type": "Fruit",
+      "type": "Pork - Side Ribs",
       "weight": 17.07,
       "active": false,
       "quantity": 40,
@@ -86,8 +110,8 @@
         "$oid": "5e886901fc13ae669000003a"
       },
       "productName": "Butter - Salted, Micro",
-      "color": "Yellow",
-      "type": "Milk product",
+      "color": "Green",
+      "type": "Blueberries",
       "weight": 243.15,
       "active": true,
       "quantity": 81,
@@ -100,7 +124,7 @@
       },
       "productName": "Dooleys Toffee",
       "color": "Goldenrod",
-      "type": "Sweets",
+      "type": "Squid - U - 10 Thailand",
       "weight": 566.44,
       "active": true,
       "quantity": 34,
@@ -113,7 +137,7 @@
       },
       "productName": "Flavouring Vanilla Artificial",
       "color": "Goldenrod",
-      "type": "Sweets",
+      "type": "Sprouts Dikon",
       "weight": 41.02,
       "active": true,
       "quantity": 100,
@@ -126,7 +150,7 @@
       },
       "productName": "Cookie - Oatmeal",
       "color": "Crimson",
-      "type": "Sweets",
+      "type": "Garbage Bag - Clear",
       "weight": 967.58,
       "active": false,
       "quantity": 44,
@@ -139,7 +163,7 @@
       },
       "productName": "Nut - Walnut, Chopped",
       "color": "Mauv",
-      "type": "Fruits",
+      "type": "Coffee - Cafe Moreno",
       "weight": 209.45,
       "active": false,
       "quantity": 33,
@@ -151,14 +175,26 @@
         "$oid": "5e886901fc13ae669000003f"
       },
       "productName": "Oxtail - Cut",
-      "color": "Brown",
-      "type": "Meal",
+      "color": "Aquamarine",
+      "type": "Beer - Muskoka Cream Ale",
       "weight": 922.75,
       "active": false,
       "quantity": 77,
       "price": 17.13
     },
-
+    {
+      "Index": 15,
+      "ean": {
+        "$oid": "5e886901fc13ae6690000040"
+      },
+      "productName": "Table Cloth 54x54 White",
+      "color": "Purple",
+      "type": "Eggplant Oriental",
+      "weight": 579.42,
+      "active": false,
+      "quantity": 56,
+      "price": 16.13
+    },
     {
       "Index": 16,
       "ean": {
@@ -166,7 +202,7 @@
       },
       "productName": "Vinegar - Balsamic, White",
       "color": "Pink",
-      "type": "Food",
+      "type": "Filter - Coffee",
       "weight": 648.37,
       "active": true,
       "quantity": 82,
@@ -179,7 +215,7 @@
       },
       "productName": "Appetizer - Chicken Satay",
       "color": "Goldenrod",
-      "type": "Food",
+      "type": "Wine - White, Gewurtzraminer",
       "weight": 621.49,
       "active": false,
       "quantity": 13,
@@ -192,7 +228,7 @@
       },
       "productName": "Beer - Mill St Organic",
       "color": "Orange",
-      "type": "Alcoholic Drink",
+      "type": "Pork - Chop, Frenched",
       "weight": 18.63,
       "active": true,
       "quantity": 65,
@@ -205,7 +241,7 @@
       },
       "productName": "Dried Cranberries",
       "color": "Yellow",
-      "type": "Food",
+      "type": "Wine - White, Ej Gallo",
       "weight": 569.56,
       "active": false,
       "quantity": 34,
@@ -218,7 +254,7 @@
       },
       "productName": "Muffin - Mix - Mango Sour Cherry",
       "color": "Fuscia",
-      "type": "Sweets",
+      "type": "Appetizer - Crab And Brie",
       "weight": 427.41,
       "active": false,
       "quantity": 81,
@@ -231,8 +267,8 @@
       },
       "productName": "Gingerale - Diet - Schweppes",
       "color": "Blue",
-      "type": "Soft Drink",
-      "weight": 1000,
+      "type": "Pasta - Detalini, White, Fresh",
+      "weight": 759.3,
       "active": false,
       "quantity": 43,
       "price": 1.54
@@ -244,7 +280,7 @@
       },
       "productName": "Onions - Pearl",
       "color": "Turquoise",
-      "type": "Vegetables",
+      "type": "Bread - Onion Focaccia",
       "weight": 244.98,
       "active": true,
       "quantity": 76,
@@ -257,7 +293,7 @@
       },
       "productName": "Muffin - Banana Nut Individual",
       "color": "Maroon",
-      "type": "Sweets",
+      "type": "Mushroom - Chanterelle Frozen",
       "weight": 908.07,
       "active": false,
       "quantity": 85,
@@ -270,7 +306,7 @@
       },
       "productName": "Chips Potato Salt Vinegar 43g",
       "color": "Goldenrod",
-      "type": "Snacks",
+      "type": "Pork - Inside",
       "weight": 56.8,
       "active": false,
       "quantity": 99,
@@ -283,7 +319,7 @@
       },
       "productName": "Tea - Orange Pekoe",
       "color": "Khaki",
-      "type": "Tea",
+      "type": "Pasta - Canelloni, Single Serve",
       "weight": 960.54,
       "active": false,
       "quantity": 76,
@@ -296,7 +332,7 @@
       },
       "productName": "Fruit Mix - Light",
       "color": "Goldenrod",
-      "type": "Fruits",
+      "type": "Garlic - Primerba, Paste",
       "weight": 898.61,
       "active": true,
       "quantity": 9,
@@ -309,8 +345,8 @@
       },
       "productName": "Lettuce - California Mix",
       "color": "Indigo",
-      "type": "Vegetables",
-      "weight": 500,
+      "type": "Wine - Chateau Bonnet",
+      "weight": 18.41,
       "active": true,
       "quantity": 29,
       "price": 5.49
@@ -322,7 +358,7 @@
       },
       "productName": "Cookies - Assorted",
       "color": "Yellow",
-      "type": "Sweets",
+      "type": "Appetizer - Cheese Bites",
       "weight": 702.65,
       "active": false,
       "quantity": 12,
@@ -335,7 +371,7 @@
       },
       "productName": "Soup - Campbells Pasta Fagioli",
       "color": "Purple",
-      "type": "Food",
+      "type": "Pears - Anjou",
       "weight": 38.22,
       "active": false,
       "quantity": 43,
@@ -348,7 +384,7 @@
       },
       "productName": "Carbonated Water - Lemon Lime",
       "color": "Purple",
-      "type": "Drink",
+      "type": "Dried Figs",
       "weight": 745.2,
       "active": false,
       "quantity": 63,
@@ -361,13 +397,25 @@
       },
       "productName": "Steel Wool S.o.s",
       "color": "Orange",
-      "type": "Material",
+      "type": "Cheese - Brie",
       "weight": 327.24,
       "active": false,
       "quantity": 42,
       "price": 19.41
     },
-
+    {
+      "Index": 32,
+      "ean": {
+        "$oid": "5e886901fc13ae6690000051"
+      },
+      "productName": "Whmis Spray Bottle Graduated",
+      "color": "Aquamarine",
+      "type": "Ecolab - Hobart Washarm End Cap",
+      "weight": 566.09,
+      "active": false,
+      "quantity": 50,
+      "price": 2.81
+    },
     {
       "Index": 33,
       "ean": {
@@ -375,7 +423,7 @@
       },
       "productName": "Water, Tap",
       "color": "Turquoise",
-      "type": "Drink",
+      "type": "Raspberries - Fresh",
       "weight": 54.06,
       "active": true,
       "quantity": 98,
@@ -388,7 +436,7 @@
       },
       "productName": "Compound - Raspberry",
       "color": "Orange",
-      "type": "Food",
+      "type": "Wine La Vielle Ferme Cote Du",
       "weight": 598.98,
       "active": false,
       "quantity": 91,
@@ -401,13 +449,25 @@
       },
       "productName": "Table Cloth 81x81 White",
       "color": "Crimson",
-      "type": "Material",
+      "type": "Ecolab Crystal Fusion",
       "weight": 736.45,
       "active": true,
       "quantity": 40,
       "price": 17.48
     },
-
+    {
+      "Index": 36,
+      "ean": {
+        "$oid": "5e886901fc13ae6690000055"
+      },
+      "productName": "Zucchini - Mini, Green",
+      "color": "Teal",
+      "type": "Beef - Rib Roast, Capless",
+      "weight": 791.24,
+      "active": true,
+      "quantity": 27,
+      "price": 15.42
+    },
     {
       "Index": 37,
       "ean": {
@@ -415,7 +475,7 @@
       },
       "productName": "Muffin Hinge - 211n",
       "color": "Khaki",
-      "type": "Sweets",
+      "type": "Soup - Campbells Bean Medley",
       "weight": 279.9,
       "active": false,
       "quantity": 60,
@@ -427,8 +487,8 @@
         "$oid": "5e886901fc13ae6690000057"
       },
       "productName": "Appetizer - Chicken Satay",
-      "color": "Yellow",
-      "type": "Food",
+      "color": "Green",
+      "type": "Turkey - Oven Roast Breast",
       "weight": 245.39,
       "active": true,
       "quantity": 6,
@@ -441,13 +501,25 @@
       },
       "productName": "Banana - Leaves",
       "color": "Khaki",
-      "type": "Fruits",
+      "type": "Lettuce - Treviso",
       "weight": 994.23,
       "active": true,
       "quantity": 21,
       "price": 8.21
     },
-
+    {
+      "Index": 40,
+      "ean": {
+        "$oid": "5e886901fc13ae6690000059"
+      },
+      "productName": "Lotus Rootlets - Canned",
+      "color": "Pink",
+      "type": "Bread - Roll, Soft White Round",
+      "weight": 249.61,
+      "active": false,
+      "quantity": 84,
+      "price": 9.73
+    },
     {
       "Index": 41,
       "ean": {
@@ -455,7 +527,7 @@
       },
       "productName": "Caviar - Salmon",
       "color": "Turquoise",
-      "type": "Food",
+      "type": "Jolt Cola - Electric Blue",
       "weight": 699.56,
       "active": false,
       "quantity": 88,
@@ -468,13 +540,25 @@
       },
       "productName": "Beef - Texas Style Burger",
       "color": "Maroon",
-      "type": "Food",
+      "type": "Huck Towels White",
       "weight": 870.98,
       "active": true,
       "quantity": 43,
       "price": 1.29
     },
-
+    {
+      "Index": 43,
+      "ean": {
+        "$oid": "5e886901fc13ae669000005c"
+      },
+      "productName": "Pails With Lids",
+      "color": "Teal",
+      "type": "Nut - Macadamia",
+      "weight": 928.13,
+      "active": true,
+      "quantity": 57,
+      "price": 5.17
+    },
     {
       "Index": 44,
       "ean": {
@@ -482,13 +566,51 @@
       },
       "productName": "Sugar - Brown",
       "color": "Goldenrod",
-      "type": "Food",
+      "type": "Tea - English Breakfast",
       "weight": 302.37,
       "active": false,
       "quantity": 63,
       "price": 7.51
     },
-
+    {
+      "Index": 45,
+      "ean": {
+        "$oid": "5e886901fc13ae669000005e"
+      },
+      "productName": "Gatorade - Lemon Lime",
+      "color": "Crimson",
+      "type": "Egg - Salad Premix",
+      "weight": 455.59,
+      "active": false,
+      "quantity": 9,
+      "price": 15.59
+    },
+    {
+      "Index": 46,
+      "ean": {
+        "$oid": "5e886901fc13ae669000005f"
+      },
+      "productName": "Fennel - Seeds",
+      "color": "Khaki",
+      "type": "Cranberries - Dry",
+      "weight": 799.5,
+      "active": false,
+      "quantity": 33,
+      "price": 2.41
+    },
+    {
+      "Index": 47,
+      "ean": {
+        "$oid": "5e886901fc13ae6690000060"
+      },
+      "productName": "Versatainer Nc - 888",
+      "color": "Goldenrod",
+      "type": "Cheese - Brie, Cups 125g",
+      "weight": 850.33,
+      "active": false,
+      "quantity": 57,
+      "price": 2.39
+    },
     {
       "Index": 48,
       "ean": {
@@ -496,7 +618,7 @@
       },
       "productName": "Snapple - Iced Tea Peach",
       "color": "Red",
-      "type": "Drink",
+      "type": "Sauce - Balsamic Viniagrette",
       "weight": 894.26,
       "active": false,
       "quantity": 76,
@@ -508,9 +630,9 @@
         "$oid": "5e886901fc13ae6690000062"
       },
       "productName": "Pepper - Pablano",
-      "color": "Black",
-      "type": "Food",
-      "weight": 100,
+      "color": "Teal",
+      "type": "Chips Potato Swt Chilli Sour",
+      "weight": 985.95,
       "active": true,
       "quantity": 85,
       "price": 7.27
@@ -521,8 +643,8 @@
         "$oid": "5e886901fc13ae6690000063"
       },
       "productName": "Sauce - Sesame Thai Dressing",
-      "color": "Orange",
-      "type": "Food",
+      "color": "Violet",
+      "type": "Wine - Chateauneuf Du Pape",
       "weight": 888.68,
       "active": true,
       "quantity": 40,
