@@ -24,7 +24,10 @@ class MainWindow extends Component {
     //*****Initial state from Json******** */
 
     this.state = {
-      products: [...JSON.parse(localStorage.getItem("products" || "[]"))],
+      products:
+        JSON.parse(localStorage.getItem("products")) === null
+          ? []
+          : JSON.parse(localStorage.getItem("products")),
     };
     this.removeRecord = this.removeRecord.bind(this);
     this.readJason = this.readJason.bind(this);
