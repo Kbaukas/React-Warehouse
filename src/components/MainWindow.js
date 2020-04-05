@@ -24,7 +24,10 @@ class MainWindow extends Component {
     //*****Initial state from Json******** */
 
     this.state = {
-      products: JSON.parse(localStorage.getItem("products" || [])),
+      products:
+        localStorage.length > 0
+          ? JSON.parse(localStorage.getItem("products"))
+          : this.readJason(),
     };
     this.removeRecord = this.removeRecord.bind(this);
     this.readJason = this.readJason.bind(this);
@@ -38,8 +41,8 @@ class MainWindow extends Component {
       products: JSON.parse(localStorage.getItem("products")),
     });
   }
-  async componentDidMount() {
-    if (localStorage.length === 0) {
+  componentDidMount() {
+    if (this.state.products.length === 0) {
       this.readJason();
     }
   }
@@ -54,9 +57,14 @@ class MainWindow extends Component {
         Index: index + 1,
       });
     });
-
     localStorage.setItem("products", JSON.stringify(newProduct));
     let productsLocal = JSON.parse(localStorage.getItem("products"));
+    this.setState({
+      products: productsLocal,
+    });
+    console.log("newProduct");
+    console.log(newProduct);
+    return newProduct;
   }
 
   //********remove product**** if active is true */
