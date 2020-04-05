@@ -24,23 +24,26 @@ class MainWindow extends Component {
     //*****Initial state from Json******** */
 
     this.state = {
-      products:
-        JSON.parse(localStorage.getItem("products")) === null
-          ? []
-          : JSON.parse(localStorage.getItem("products")),
+      products: JSON.parse(localStorage.getItem("products" || [])),
     };
     this.removeRecord = this.removeRecord.bind(this);
     this.readJason = this.readJason.bind(this);
     this.updateTable = this.updateTable.bind(this);
     this.toggleActive = this.toggleActive.bind(this);
+    this.handleLoadData = this.handleLoadData.bind(this);
   }
   //****function to add unique id to each product  and use this function to initiate state*/
+  handleLoadData(evt) {
+    this.setState({
+      products: JSON.parse(localStorage.getItem("products")),
+    });
+  }
   async componentDidMount() {
-    console.log("ilgis " + this.state.products.length);
-    if (this.state.products.length === 0) {
+    if (localStorage.length === 0) {
       this.readJason();
     }
   }
+
   readJason() {
     let newProduct = [];
     PRODUCT_DATA.products.map((product, index) => {
@@ -68,10 +71,6 @@ class MainWindow extends Component {
       () =>
         localStorage.setItem("products", JSON.stringify(this.state.products))
     );
-    // let products = JSON.parse(localStorage.getItem("products"));
-    // let newProducts = products.filter((product) => product.id !== id);
-
-    // localStorage.setItem("products", JSON.stringify(newProducts));
   }
   // *********Select deselect Active*******
   toggleActive(id) {
@@ -119,6 +118,7 @@ class MainWindow extends Component {
   render() {
     return (
       <div className="MainWindow">
+        <button onClick={this.handleLoadData}>Load Data</button>
         <h1>Warehouse Product's Table</h1>
         {/********  genarating table*********** */}
         <table>
