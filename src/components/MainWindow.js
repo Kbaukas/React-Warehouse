@@ -24,7 +24,7 @@ class MainWindow extends Component {
     //*****Initial state from Json******** */
 
     this.state = {
-      products: JSON.parse(localStorage.getItem("products" || [])),
+      products: [...JSON.parse(localStorage.getItem("products"))],
     };
     this.removeRecord = this.removeRecord.bind(this);
     this.readJason = this.readJason.bind(this);
@@ -33,7 +33,8 @@ class MainWindow extends Component {
   }
   //****function to add unique id to each product  and use this function to initiate state*/
   async componentDidMount() {
-    if (this.state.products === null) {
+    console.log("ilgis " + this.state.products.length);
+    if (this.state.products.length === 0) {
       this.readJason();
     }
   }
@@ -52,16 +53,22 @@ class MainWindow extends Component {
     let productsLocal = JSON.parse(localStorage.getItem("products"));
   }
 
-  //********remove product**** by id */
+  //********remove product**** if active is true */
   removeRecord(id) {
     console.log("remove");
-    this.setState((cuState) => ({
-      products: cuState.products.filter((product) => product.id !== id),
-    }));
-    let products = JSON.parse(localStorage.getItem("products"));
-    let newProducts = products.filter((product) => product.id !== id);
+    this.setState(
+      (cuState) => ({
+        products: cuState.products.filter(
+          (product) => product.active === false
+        ),
+      }),
+      () =>
+        localStorage.setItem("products", JSON.stringify(this.state.products))
+    );
+    // let products = JSON.parse(localStorage.getItem("products"));
+    // let newProducts = products.filter((product) => product.id !== id);
 
-    localStorage.setItem("products", JSON.stringify(newProducts));
+    // localStorage.setItem("products", JSON.stringify(newProducts));
   }
   // *********Select deselect Active*******
   toggleActive(id) {
