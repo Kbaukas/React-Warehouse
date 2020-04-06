@@ -5,13 +5,21 @@ class EditForm extends Component {
   constructor(props) {
     super(props);
     // unwraping props
-    const { productName, type, weight, color, id } = this.props.product;
+    const {
+      productName,
+      type,
+      weight,
+      color,
+      id,
+      showChanges,
+    } = this.props.product;
     // defining default input values
     this.state = {
       productName: productName,
       type: type,
       weight: weight,
-      color: color
+      color: color,
+      showChanges: showChanges,
     };
     this.hadleChange = this.hadleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,13 +27,18 @@ class EditForm extends Component {
 
   hadleChange(evt) {
     this.setState({
-      [evt.target.name]: evt.target.value
+      [evt.target.name]: evt.target.value,
     });
   }
   handleSubmit(evt) {
     evt.preventDefault();
+
     this.props.updateTable(this.props.product.id, this.state);
     this.props.close();
+    this.setState((cuState) => ({
+      showChanges: [...cuState.showChanges, this.state.productName],
+    }));
+    console.log(this.state.showChanges);
   }
   componentDidUpdate(prevProps, prevState) {
     console.log("Form Update");

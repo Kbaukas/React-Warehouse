@@ -65,7 +65,11 @@ class ProducInTable extends Component {
       </tr>
     ) : (
       // passing props to html <td> elements
-      <tr className="ProducInTable">
+      // And triggering tr to check uncheck Checkbox
+      <tr
+        onClick={() => this.props.activate(this.props.product.id)}
+        className="ProducInTable"
+      >
         <td>{this.props.index}</td>
         <td>{productName}</td>
         <td>{ean.$oid}</td>

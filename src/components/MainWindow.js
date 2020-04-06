@@ -24,10 +24,11 @@ class MainWindow extends Component {
     //*****Initial state from Json******** */
 
     this.state = {
-      products:
-        localStorage.length > 0
+      products: [
+        ...(localStorage.length > 0
           ? JSON.parse(localStorage.getItem("products"))
-          : this.readJason(),
+          : this.readJason()),
+      ],
     };
     this.removeRecord = this.removeRecord.bind(this);
     this.readJason = this.readJason.bind(this);
@@ -55,6 +56,8 @@ class MainWindow extends Component {
         active: false,
         id: uuidv4(),
         Index: index + 1,
+
+        showChanges: new Set(),
       });
     });
     localStorage.setItem("products", JSON.stringify(newProduct));
@@ -100,28 +103,40 @@ class MainWindow extends Component {
     //   "Type",
     //   "Weight",
     //   "Color",
-    const { productName, type, weight, color } = editData;
+    const { productName, type, weight, color, showChanges } = editData;
+
+    let tarpinisSetas = new Set();
     const updatedProducts = this.state.products.map((product) => {
+      // console.log(product.historyName);
+      tarpinisSetas.add(productName);
       if (product.id === id) {
+        console.log(tarpinisSetas);
+
         return {
           ...product,
           productName: productName,
           type: type,
           weight: weight,
           color: color,
+          showChanges: { ...showChanges, productName },
         };
       }
       return product;
     });
-    this.setState({
-      products: updatedProducts,
-    });
+    this.setState((cuState) => ({
+      products: [...updatedProducts],
+    }));
     // *************************
-    localStorage.setItem("products", JSON.stringify(updatedProducts));
+    // const state = [...this.state.products.historyName, productName];
+    // this.state.products.historyName.add(productName);
+    localStorage.setItem("products", JSON.stringify([...updatedProducts]));
     let products = JSON.parse(localStorage.getItem("products"));
-    console.log(products);
+
+    console.log("-----------------");
+    console.log(this.state.products[0].showChanges);
     // ***************************
   }
+  componentDidUpdate() {}
 
   render() {
     return (

@@ -16,8 +16,13 @@
 .MainWindow tbody tr {
   background-color: rgba(165, 42, 42, 0.253);
 }
+
 .MainWindow tbody tr:nth-child(2n) {
   background-color: rgba(105, 110, 185, 0.37);
+}
+.MainWindow tbody tr:hover {
+  background-color: rgba(21, 64, 104, 0.493);
+  cursor: pointer;
 }
 .MainWindow th {
   line-height: 30px;
