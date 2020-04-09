@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/React-Warehouse/static/css/main.02c6eea5.chunk.css",
-    "main.js": "/React-Warehouse/static/js/main.8f20610d.chunk.js",
-    "main.js.map": "/React-Warehouse/static/js/main.8f20610d.chunk.js.map",
-    "runtime-main.js": "/React-Warehouse/static/js/runtime-main.37a0daf1.js",
-    "runtime-main.js.map": "/React-Warehouse/static/js/runtime-main.37a0daf1.js.map",
-    "static/css/2.de424728.chunk.css": "/React-Warehouse/static/css/2.de424728.chunk.css",
-    "static/js/2.6692f33e.chunk.js": "/React-Warehouse/static/js/2.6692f33e.chunk.js",
-    "static/js/2.6692f33e.chunk.js.map": "/React-Warehouse/static/js/2.6692f33e.chunk.js.map",
-    "index.html": "/React-Warehouse/index.html",
-    "precache-manifest.bae375c9de63eaea70e3c055d92dfcd0.js": "/React-Warehouse/precache-manifest.bae375c9de63eaea70e3c055d92dfcd0.js",
-    "service-worker.js": "/React-Warehouse/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/React-Warehouse/static/css/2.de424728.chunk.css.map",
-    "static/css/main.02c6eea5.chunk.css.map": "/React-Warehouse/static/css/main.02c6eea5.chunk.css.map",
-    "static/js/2.6692f33e.chunk.js.LICENSE.txt": "/React-Warehouse/static/js/2.6692f33e.chunk.js.LICENSE.txt"
+    "main.css": "/products/static/css/main.02c6eea5.chunk.css",
+    "main.js": "/products/static/js/main.4233514d.chunk.js",
+    "main.js.map": "/products/static/js/main.4233514d.chunk.js.map",
+    "runtime-main.js": "/products/static/js/runtime-main.615d7284.js",
+    "runtime-main.js.map": "/products/static/js/runtime-main.615d7284.js.map",
+    "static/css/2.de424728.chunk.css": "/products/static/css/2.de424728.chunk.css",
+    "static/js/2.6692f33e.chunk.js": "/products/static/js/2.6692f33e.chunk.js",
+    "static/js/2.6692f33e.chunk.js.map": "/products/static/js/2.6692f33e.chunk.js.map",
+    "index.html": "/products/index.html",
+    "precache-manifest.ebf7add2914bbfb6e3632f9d5030eb3f.js": "/products/precache-manifest.ebf7add2914bbfb6e3632f9d5030eb3f.js",
+    "service-worker.js": "/products/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/products/static/css/2.de424728.chunk.css.map",
+    "static/css/main.02c6eea5.chunk.css.map": "/products/static/css/main.02c6eea5.chunk.css.map",
+    "static/js/2.6692f33e.chunk.js.LICENSE.txt": "/products/static/js/2.6692f33e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.37a0daf1.js",
+    "static/js/runtime-main.615d7284.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.6692f33e.chunk.js",
     "static/css/main.02c6eea5.chunk.css",
-    "static/js/main.8f20610d.chunk.js"
+    "static/js/main.4233514d.chunk.js"
   ]
 }
