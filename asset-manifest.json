@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React-Warehouse/static/css/main.02c6eea5.chunk.css",
-    "main.js": "/React-Warehouse/static/js/main.b2768d82.chunk.js",
-    "main.js.map": "/React-Warehouse/static/js/main.b2768d82.chunk.js.map",
+    "main.js": "/React-Warehouse/static/js/main.e3ecb951.chunk.js",
+    "main.js.map": "/React-Warehouse/static/js/main.e3ecb951.chunk.js.map",
     "runtime-main.js": "/React-Warehouse/static/js/runtime-main.37a0daf1.js",
     "runtime-main.js.map": "/React-Warehouse/static/js/runtime-main.37a0daf1.js.map",
     "static/css/2.de424728.chunk.css": "/React-Warehouse/static/css/2.de424728.chunk.css",
     "static/js/2.6692f33e.chunk.js": "/React-Warehouse/static/js/2.6692f33e.chunk.js",
     "static/js/2.6692f33e.chunk.js.map": "/React-Warehouse/static/js/2.6692f33e.chunk.js.map",
     "index.html": "/React-Warehouse/index.html",
-    "precache-manifest.33dedb26d5bfa77419a7ee9373170c04.js": "/React-Warehouse/precache-manifest.33dedb26d5bfa77419a7ee9373170c04.js",
+    "precache-manifest.899a01efa58c1bdf3c1d39d63a26b117.js": "/React-Warehouse/precache-manifest.899a01efa58c1bdf3c1d39d63a26b117.js",
     "service-worker.js": "/React-Warehouse/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/React-Warehouse/static/css/2.de424728.chunk.css.map",
     "static/css/main.02c6eea5.chunk.css.map": "/React-Warehouse/static/css/main.02c6eea5.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.6692f33e.chunk.js",
     "static/css/main.02c6eea5.chunk.css",
-    "static/js/main.b2768d82.chunk.js"
+    "static/js/main.e3ecb951.chunk.js"
   ]
 }
