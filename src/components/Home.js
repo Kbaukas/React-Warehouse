@@ -18,10 +18,10 @@ export class Home extends Component {
             search: "?quick-submit=true",
           }}
         ></Link>
-        {/* <MainWindow /> */}
+
         <Switch>
           {/* <h1>Home</h1> */}
-
+          <MainWindow />
           <Route exact path="/home" render={() => <Home />} />
           <Route exact path="/products/preview" render={() => <Preview />} />
           <Route exact path="/" render={() => <MainWindow />} />
