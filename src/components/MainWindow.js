@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import ProducInTable from "./ProducInTable";
 import "./css/MainWindow.css";
 import { v4 as uuidv4 } from "uuid";
+import { Route, Switch } from "react-router-dom";
+
+// import { MDBDataTable } from "mdbreact";
 
 import PRODUCT_DATA from "./data/jsonData.json";
 import EditForm from "./EditForm";
@@ -15,6 +18,8 @@ class MainWindow extends Component {
       "Type",
       "Weight(g)",
       "Color",
+      "Price",
+      "Quantity",
       "Active",
     ],
   };
@@ -53,11 +58,15 @@ class MainWindow extends Component {
     PRODUCT_DATA.products.map((product, index) => {
       newProduct.push({
         ...product,
+        weigth: product.weight.toFixed(2),
         active: false,
         id: uuidv4(),
         Index: index + 1,
+        price: (Math.random() * 100).toFixed(2),
+        quantity: Math.floor(Math.random() * 50),
 
-        showChanges: new Set(),
+        showChanges: new Set(product.productName),
+        dateOfChanges: [new Date()],
       });
     });
     localStorage.setItem("products", JSON.stringify(newProduct));
@@ -96,29 +105,35 @@ class MainWindow extends Component {
     );
   }
   //***** */ updating table  ******
-  updateTable(id, editData) {
+  updateTable(id, editData, setas) {
     // "Index",
     // "Product Name",
     //   "EAN",
     //   "Type",
     //   "Weight",
     //   "Color",
-    const { productName, type, weight, color, showChanges } = editData;
+    const { productName, type, weight, color, price, quantity } = editData;
 
     let tarpinisSetas = new Set();
+    // var tarpinisMasyvas = [...showChanges];
+
     const updatedProducts = this.state.products.map((product) => {
       // console.log(product.historyName);
-      tarpinisSetas.add(productName);
+      // tarpinisSetas.add(productName);
       if (product.id === id) {
-        console.log(tarpinisSetas);
-
         return {
           ...product,
           productName: productName,
           type: type,
           weight: weight,
           color: color,
-          showChanges: { ...showChanges, productName },
+          price: price,
+          quantity: quantity,
+          showChanges: new Set([...setas, productName]),
+          dateOfChanges:
+            setas.size > product.showChanges.size
+              ? [...product.dateOfChanges, new Date()]
+              : product.dateOfChanges,
         };
       }
       return product;
@@ -132,25 +147,36 @@ class MainWindow extends Component {
     localStorage.setItem("products", JSON.stringify([...updatedProducts]));
     let products = JSON.parse(localStorage.getItem("products"));
 
-    console.log("-----------------");
-    console.log(this.state.products[0].showChanges);
     // ***************************
   }
-  componentDidUpdate() {}
-
+  componentDidUpdate() {
+    // this.state.products.map(product=>({
+    //   setState({
+    //     product:{...product,showChanges.add("asadasd")}
+    //   })
+    // }))
+  }
+  addToChangeName(name) {
+    this.setState({});
+  }
   render() {
     return (
       <div className="MainWindow">
         {/* <button onClick={this.handleLoadData}>Load Data</button> */}
         <h1>Warehouse Product's Table</h1>
         {/********  genarating table*********** */}
-        <table>
+        <table className="table-responsive">
           {/* Table head */}
           <thead>
-            <tr>
+            <tr className="">
               {this.props.tableHead.map((th) => (
-                <th key={uuidv4()}>{th}</th>
+                <th className="sticky-header " key={uuidv4()}>
+                  {th}
+                </th>
               ))}
+              <th className="sticky-header "></th>
+              <th className="sticky-header "></th>
+              <th className="sticky-header "></th>
             </tr>
           </thead>
           {/* generating table body  */}
@@ -168,21 +194,8 @@ class MainWindow extends Component {
                 />
               ))}
           </tbody>
-          <tfoot>
-            <tr>
-              <td colSpan="10">
-                <div className="links">
-                  <a href="#">&laquo;</a>{" "}
-                  <a className="active" href="#">
-                    1
-                  </a>{" "}
-                  <a href="#">2</a> <a href="#">3</a> <a href="#">4</a>{" "}
-                  <a href="#">&raquo;</a>
-                </div>
-              </td>
-            </tr>
-          </tfoot>
         </table>
+        <div className="tableFooter"></div>
         {/* <EditForm /> */}
       </div>
     );

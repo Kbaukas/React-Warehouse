@@ -3,16 +3,21 @@
   justify-content: space-evenly;
   /* background-color: rgb(223, 210, 186); */
 }
-.EditForm .input_1 {
-  min-width: 21.65%;
+.EditForm .input_1,
+.EditForm .input_2 {
+  min-width: 16%;
+  padding: 7px 10px;
   border: none;
   text-align: center;
 }
-.EditForm .input_2,
+
+.input_2,
 .input_3,
 .input_4,
-.input_5 {
-  margin-left: 5px;
+.input_5,
+.input_6,
+.input_7 {
+  padding: 7px 0px;
   /* min-width: 7.6%; */
   border: none;
   border-left: 2px solid rgba(128, 128, 128, 0.144);
@@ -29,11 +34,29 @@
 } */
 .EditForm button {
   /* margin-right: auto; */
-  margin-left: 5%;
-  padding: 10px 0;
-  width: 6.6%;
+  margin-top: 35px;
+  padding: 10px 30px;
+  cursor: pointer;
+
+  /* width: 6.6%; */
   border: none;
   background-color: rgba(32, 40, 165, 0.644);
   color: white;
   border-radius: 5px;
+}
+.EditForm p {
+  font-size: 12px;
+}
+.EditForm div {
+  padding-bottom: 15px;
+}
+.EditForm a {
+  text-decoration: none;
+  /* display: block; */
+  margin-left: 20px;
+  padding: 7px;
+  background-color: brown;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
 }

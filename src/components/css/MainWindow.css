@@ -7,26 +7,36 @@
   color: brown;
   margin-bottom: 50px;
 }
-.MainWindow table {
-  width: 90vw;
+.MainWindow table.table-responsive {
+  min-width: 85vw;
+
+  max-height: 700px;
+  overflow-y: auto; /* Trigger vertical scroll    */
+  overflow-x: hidden; /* Hide the horizontal scroll */
 }
 .MainWindow table td {
   padding: 20px;
 }
 .MainWindow tbody tr {
   background-color: rgba(165, 42, 42, 0.253);
+  border: 2px solid rgba(46, 28, 28, 0.068);
 }
 
 .MainWindow tbody tr:nth-child(2n) {
   background-color: rgba(105, 110, 185, 0.37);
 }
 .MainWindow tbody tr:hover {
-  background-color: rgba(21, 64, 104, 0.493);
-  cursor: pointer;
+  background-color: rgba(42, 13, 90, 0.322);
+  /* cursor: pointer; */
 }
 .MainWindow th {
   line-height: 30px;
   font-size: 16px;
+  border-left: none;
+  margin: 0;
+  padding: 10px 0;
+  background-color: rgba(128, 128, 128, 0.507);
+  border: none;
 }
 /* table foot */
 tfoot {
@@ -48,4 +58,21 @@ tfoot .links a {
   color: #460606;
   padding: 2px 8px;
   border-radius: 5px;
+}
+
+td.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /*To not have transparent background.
+  background-color: white;*/
+}
+.tableFooter {
+  /* min-width: 84.1vw; */
+  margin-right: 17px;
+  min-width: 83vw;
+  height: 40px;
+  background-color: #64181888;
+  position: relative;
+  top: -41px;
 }
