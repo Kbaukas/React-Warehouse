@@ -13,12 +13,12 @@ class NavBar extends React.Component {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link href="/products/preview">Preview</Nav.Link>
+                  <Nav.Link href="#products/preview">Preview</Nav.Link>
                   <Nav.Link href="/products">Products</Nav.Link>
 
                   <NavDropdown title="Meniu" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/products">Table</NavDropdown.Item>
-                    <NavDropdown.Item href="/products/preview">
+                    <NavDropdown.Item href="/products/preview#">
                       Edit
                     </NavDropdown.Item>
 
